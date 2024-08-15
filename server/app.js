@@ -19,7 +19,13 @@ require('./DB/conn');
 app.use(express.json());
 
 // include the cors for all routes(very important)
-app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://mern-portfolio-frontend-tau.vercel.app/"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 
 const cookieParser = require('cookie-parser');
 app.use(cookieParser());
