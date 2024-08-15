@@ -1,18 +1,37 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react'; // if you're using React
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
+
+// lines added else it was not working....
 export default defineConfig({
-  plugins: [react()], // Add plugins here
+  plugins: [react()],
   server: {
-    port: 3000, // Set the port for the dev server
-  },
-  build: {
-    outDir: 'dist', // Output directory for the build files
-  },
-  resolve: {
-    alias: {
-      '@': '/src', // Allows you to use '@' as an alias for the 'src' directory
+    proxy: {
+      '/register': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        secure: false,
+      },
+      '/signin': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        secure: false,
+      },
+      '/about': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        secure: false,
+      },
+      '/getData': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        secure: false,
+      },
+      '/contact': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        secure: false,
+      },
     },
   },
 });
