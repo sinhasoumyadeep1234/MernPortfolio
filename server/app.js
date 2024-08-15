@@ -21,7 +21,7 @@ app.use(express.json());
 // include the cors for all routes(very important)
 app.use(cors(
     {
-        origin: ["https://mern-portfolio-frontend-tau.vercel.app/"],
+        origin: ["https://mern-portfolio-frontend-tau.vercel.app"],
         methods: ["POST", "GET"],
         credentials: true
     }
