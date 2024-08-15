@@ -4,7 +4,7 @@ const app=express();
 
 // require CORS(very important)
 const cors = require('cors');
-
+app.use(cors());
 // specifying the path of the .env file
 dotenv.config({path:'./.env'});
 
@@ -27,7 +27,7 @@ app.use(express.json());
 //     }
 // ));
 
-app.use(cors());
+
 
 const cookieParser = require('cookie-parser');
 app.use(cookieParser());
