@@ -8,27 +8,27 @@ export default defineConfig({
   server: {
     proxy: {
       '/register': {
-        target: 'http://localhost:3000',
+        target: 'https://mern-portfolio-server-eight.vercel.app',
         changeOrigin: true,
         secure: false,
       },
       '/signin': {
-        target: 'http://localhost:3000',
+        target: 'https://mern-portfolio-server-eight.vercel.app',
         changeOrigin: true,
         secure: false,
       },
       '/about': {
-        target: 'http://localhost:3000',
+        target: 'https://mern-portfolio-server-eight.vercel.app',
         changeOrigin: true,
         secure: false,
       },
       '/getData': {
-        target: 'http://localhost:3000',
+        target: 'https://mern-portfolio-server-eight.vercel.app',
         changeOrigin: true,
         secure: false,
       },
       '/contact': {
-        target: 'http://localhost:3000',
+        target: 'https://mern-portfolio-server-eight.vercel.app',
         changeOrigin: true,
         secure: false,
       },
