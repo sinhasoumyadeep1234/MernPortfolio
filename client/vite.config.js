@@ -1,8 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-
-// lines added else it was not working....
 export default defineConfig({
   plugins: [react()],
   server: {
@@ -32,6 +30,15 @@ export default defineConfig({
         changeOrigin: true,
         secure: false,
       },
+    },
+  },
+  // Handle client-side routing
+  build: {
+    outDir: 'dist',
+  },
+  resolve: {
+    alias: {
+      '@': '/src',
     },
   },
 });
