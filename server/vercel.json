@@ -1,9 +1,22 @@
 {
   "version": 2,
   "builds": [
-    { "src": "index.js", "use": "@vercel/node" }
+    {
+      "src": "client/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "client/dist"
+      }
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/index.js" }
+    {
+      "src": "/(register|signin|about|contact|getData)/(.*)",
+      "dest": "https://mern-portfolio-server-eight.vercel.app/$1/$2"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
   ]
 }
