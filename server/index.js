@@ -1,4 +1,5 @@
 const dotenv=require('dotenv');
+const path = require('path');
 const express=require('express');
 const app=express();
 
@@ -12,21 +13,10 @@ const PORT=process.env.PORT || 3000;
 
 // import the mongodb connection file
 require('./DB/conn');
-// import the database schema and collection
-// const User=require('./Models/userDatabaseSchema');
+
 
 // middleware to parse json
 app.use(express.json());
-
-// include the cors for all routes(very important)
-// app.use(cors(
-//     {
-//         origin: ["https://mern-portfolio-frontend-tau.vercel.app"],
-//         methods: ["POST", "GET"],
-//         credentials: true
-//     }
-// ));
-
 
 
 const cookieParser = require('cookie-parser');
@@ -49,12 +39,6 @@ app.get('*', (req, res) => {
 
 // new added lines ends here
 
-
-
-
-// if(process.env.NODE_ENV === "production"){
-//     app.use(express.static("client/dist"));
-// }
 
 
 app.listen(PORT,()=>{
