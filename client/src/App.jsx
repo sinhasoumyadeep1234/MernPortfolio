@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from "react";
 import "./App.css";
-import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -51,10 +51,9 @@ function App() {
     <>
       <userContext.Provider value={{ state, dispatch }}>
         {/* // NAVBAR IS COMMON HENCE WE WILL NOT ADD INTO ROUTE */}
-        <Router>
+        
           <Navbar />
           <Routing />
-        </Router>
       </userContext.Provider>
     </>
   );
