@@ -85,7 +85,7 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor:"#F8F9FA"}}>
         <NavLink className="navbar-brand" to="/">
-          Navbar
+          <img src="/assets/images/mainlogo.png" style={{height:"47px",width:"136px", borderRadius:"7px",marginLeft:"5px"}} />
         </NavLink>
         <button
           className="navbar-toggler"
