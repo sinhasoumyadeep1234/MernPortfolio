@@ -13,7 +13,7 @@ const Logout = () => {
     // now we will do using promises
     useEffect(()=>{
         // fetch the logout route
-        fetch('/logout',{
+        fetch('https://mern-portfolio-server-eight.vercel.app/logout',{
             method:"GET",
             headers:{
                 Accept:"application/json",
