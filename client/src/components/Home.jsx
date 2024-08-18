@@ -7,7 +7,7 @@ const Home = () => {
     const callHomePage = async () => {
       try {
         // call fetch request to the backend route /getdata to authenticate the user..note the form must have get method..as the authentication logic of contact page is written for get request
-        const response = await fetch("/getData", {
+        const response = await fetch("https://mern-portfolio-server-eight.vercel.app/getData", {
           // for the header and body the things will change
           method: "GET",
           headers: {
