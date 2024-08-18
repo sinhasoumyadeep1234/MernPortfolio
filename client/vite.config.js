@@ -8,27 +8,27 @@ export default defineConfig({
       '/register': {
         target: 'https://mern-portfolio-server-eight.vercel.app',
         changeOrigin: true,
-        secure: false,
+        secure: true,
       },
       '/signin': {
         target: 'https://mern-portfolio-server-eight.vercel.app',
         changeOrigin: true,
-        secure: false,
+        secure: true,
       },
       '/about': {
         target: 'https://mern-portfolio-server-eight.vercel.app',
         changeOrigin: true,
-        secure: false,
+        secure: true,
       },
       '/getData': {
         target: 'https://mern-portfolio-server-eight.vercel.app',
         changeOrigin: true,
-        secure: false,
+        secure: true,
       },
       '/contact': {
         target: 'https://mern-portfolio-server-eight.vercel.app',
         changeOrigin: true,
-        secure: false,
+        secure: true,
       },
     },
   },
