@@ -5,7 +5,16 @@ const app=express();
 
 // require CORS(very important)
 const cors = require('cors');
-app.use(cors());
+// app.use(cors());
+
+const corsOptions = {
+  origin: 'https://mern-portfolio-frontend-tau.vercel.app', // Your frontend's URL
+  credentials: true, // Allow credentials (cookies, etc.) to be sent
+};
+
+app.use(cors(corsOptions));
+
+
 // specifying the path of the .env file
 dotenv.config({path:'./.env'});
 
