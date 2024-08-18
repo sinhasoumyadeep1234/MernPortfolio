@@ -15,6 +15,7 @@ const cookieParser = require('cookie-parser');
 
 const corsOptions = {
   origin: 'https://mern-portfolio-frontend-tau.vercel.app', // Your frontend's URL
+  methods: ["POST", "GET"],
   credentials: true, // Allow credentials (cookies, etc.) to be sent
 };
 
