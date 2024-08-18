@@ -50,7 +50,7 @@ const Signup = () => {
     else {
       // push data to the backend
       // now use fetch api to call a post method to the route /register..fetch returns a promise thus use await
-      const response = await fetch("/register", {
+      const response = await fetch("https://mern-portfolio-server-eight.vercel.app/register", {
         // now we have to define the content type,header and body
         method: "POST",
         headers: {
