@@ -12,7 +12,7 @@ const About = () => {
   const callAboutPage=async()=>{
     try{
       // call fetch request to the backend route /about to authenticate the user..note the form must have get method..as the authentication logic of about page is written for get request
-      const response=await fetch('/about',{
+      const response=await fetch('https://mern-portfolio-server-eight.vercel.app/about',{
         // for the header and body the things will change
         method: "GET",
         headers:{
