@@ -33,13 +33,13 @@ app.use(require('./router/auth'));
 
 // mew added lines
 
-// Serve static files from the client/dist directory
-app.use(express.static(path.join(__dirname, 'client', 'dist')));
+// // Serve static files from the client/dist directory
+// app.use(express.static(path.join(__dirname, 'client', 'dist')));
 
-// For any route that doesn’t match the API routes, serve index.html
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
-});
+// // For any route that doesn’t match the API routes, serve index.html
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+// });
 
 // new added lines ends here
 
