@@ -1,10 +1,16 @@
 const dotenv=require('dotenv');
+dotenv.config({path:'./.env'});
 const path = require('path');
 const express=require('express');
 const app=express();
-
+const PORT=process.env.PORT || 3000;
 // require CORS(very important)
 const cors = require('cors');
+// import the mongodb connection file
+require('./DB/conn');
+const cookieParser = require('cookie-parser');
+
+
 // app.use(cors());
 
 const corsOptions = {
@@ -14,23 +20,11 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-
-// specifying the path of the .env file
-dotenv.config({path:'./.env'});
-
-const PORT=process.env.PORT || 3000;
-
-// import the mongodb connection file
-require('./DB/conn');
-
-
 // middleware to parse json
 app.use(express.json());
 
 
-const cookieParser = require('cookie-parser');
 app.use(cookieParser());
-
 
 // import the router file using middleware as it uses router
 app.use(require('./router/auth'));
