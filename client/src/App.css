@@ -25,6 +25,8 @@
 }
 
 
+
+
 .project-card .card-body {
   flex-grow: 1;
   display: flex;
@@ -550,5 +552,12 @@
 @media only screen and (max-width: 768px) {
   .notFound404 h1 {
     font-size: 120px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .col-lg-10{
+    width: 50%;
+    flex-direction: column;
   }
 }
