@@ -120,9 +120,6 @@ const ProjectDetails = () => {
       <div className="project-details-image">
 
         <iframe
-      style={{width: "600px",
-        maxWidth: "600px",
-        height: "300px"}}
         src={project.video}
         frameBorder="0"
         allow="autoplay; encrypted-media"
