@@ -126,6 +126,8 @@ router.post("/signin", async (req, res) => {
         expires: new Date(Date.now() + 25892000000),
         // mark http only true..else it will only store if the connection is https(secure)
         httpOnly: true,
+        secure: true,
+        sameSite: 'None',
       });
 
       if (isSame) {
