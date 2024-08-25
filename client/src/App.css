@@ -564,7 +564,7 @@
     width: 200px;
     height: 200px;
   }
-  .signup-form form-button{
+  .signup-form .form-button{
     gap: 4px;
   }
 }
