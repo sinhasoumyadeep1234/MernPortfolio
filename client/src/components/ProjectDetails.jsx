@@ -117,7 +117,9 @@ const ProjectDetails = () => {
       </h4>
 
       {/* add the video */}
-      <iframe
+      <div className="project-details-image">
+
+        <iframe
       style={{width: "600px",
         maxWidth: "600px",
         height: "300px"}}
@@ -127,6 +129,9 @@ const ProjectDetails = () => {
         title={project.title}
         className="project-details-video"
       ></iframe>
+        
+      </div>
+      
 
       {/* add the project link */}
       <a
