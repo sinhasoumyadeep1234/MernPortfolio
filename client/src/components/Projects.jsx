@@ -96,7 +96,7 @@ const Projects = () => {
   <Row className="justify-content-center">
     {/* now take the array and use map function to apply styles to all the sub elements */}
     {projects.map(project=>(
-        <Col key={project.id} sm={12} md={6} lg={4} className='mb-4'>
+        <Col key={project.id} sm={12} md={6} lg={4} className='mb-4 d-flex justify-content-center'>
           {/* call the card component and send one project element at a time as a prop */}
           
           <ProjectCard project={project}/>
