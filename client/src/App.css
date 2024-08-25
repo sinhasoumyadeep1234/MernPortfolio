@@ -553,6 +553,20 @@
   .notFound404 h1 {
     font-size: 120px;
   }
+  .signup-container{
+    height: 80vh;
+    justify-content: center;
+  } 
+  .MAIN h1{
+    font-size: 25px;
+  }
+  .signup-image-container img{
+    width: 200px;
+    height: 200px;
+  }
+  .signup-form form-button{
+    gap: 4px;
+  }
 }
 
 @media only screen and (max-width: 660px) {
