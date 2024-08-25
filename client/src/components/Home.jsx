@@ -13,6 +13,7 @@ const Home = () => {
           headers: {
             "Content-Type": "application/json"
           },
+          credentials: "include",
         });
   
         // now if a user is present having the credentials then in response we will get the whole collection
