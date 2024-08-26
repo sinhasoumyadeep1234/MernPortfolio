@@ -449,7 +449,6 @@
 @media (max-width: 920px) {
   .home-container {
       flex-direction: column;
-      margin-top: 50px;
   }
 
   .bio{
@@ -472,12 +471,12 @@
     font-size: 1rem;
     color: #555;
     margin: 20px 0;
-    font-weight: 800px;
+    font-weight: bold;
   }
 
   .image-container{
     width: 100px;
-    height: 100px;
+    height: 130px;
     border-radius: 50px;
   }
   .image-container img{
