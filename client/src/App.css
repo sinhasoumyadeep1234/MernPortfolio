@@ -483,6 +483,13 @@
     width: 100px;
     height:max-content;
   }
+
+  #contact_form_new input::placeholder{
+    font-size:8px;
+  }
+  #contact_form_new input{
+    font-size:12px;
+  }
 }
 
 /* error page component */
