@@ -7,33 +7,46 @@ import { useContext } from "react";
 const Navbar = () => {
   const {state,dispatch} = useContext(userContext);
 
+  // collapsing navbar automatically when a link is clicked
+  const collapseNavbar = () => {
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  const navbarCollapse = document.querySelector('.navbar-collapse');
+
+  // Check if the screen width is less than or equal to 928px
+  if (window.innerWidth <= 920 && navbarCollapse.classList.contains('show')) {
+    navbarToggler.click(); // Simulate a click on the navbar toggler to collapse the menu
+  }
+};
+
+  
+  
   const RenderNavLinks=()=>{
     // if state is true then dont show the login/registration button links
     if(state){
       return(
         <>
           <li className="nav-item active">
-              <NavLink className="nav-link" to="/">
+              <NavLink className="nav-link" to="/" onClick={collapseNavbar}>
                 Home
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about">
+              <NavLink className="nav-link" to="/about" onClick={collapseNavbar}>
                 About
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/projects">
+              <NavLink className="nav-link" to="/projects" onClick={collapseNavbar}>
                 Projects
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contact">
+              <NavLink className="nav-link" to="/contact" onClick={collapseNavbar}>
                 Contact
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/logout">
+              <NavLink className="nav-link" to="/logout" onClick={collapseNavbar}>
                 Logout
               </NavLink>
             </li>
@@ -45,32 +58,32 @@ const Navbar = () => {
       return(
       <>
         <li className="nav-item active">
-              <NavLink className="nav-link" to="/">
+              <NavLink className="nav-link" to="/" onClick={collapseNavbar}>
                 Home
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about">
+              <NavLink className="nav-link" to="/about" onClick={collapseNavbar}>
                 About
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/projects">
+              <NavLink className="nav-link" to="/projects" onClick={collapseNavbar}>
                 Projects
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contact">
+              <NavLink className="nav-link" to="/contact" onClick={collapseNavbar}>
                 Contact
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/login">
+              <NavLink className="nav-link" to="/login" onClick={collapseNavbar}>
                 Log In
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/registration">
+              <NavLink className="nav-link" to="/registration" onClick={collapseNavbar}>
                 Sign Up
               </NavLink>
             </li>
