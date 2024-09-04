@@ -75,7 +75,7 @@ const projects=[
     description:'Full Stack clone of Spotify music player',
     fullDescription:'A complete full stack clone of the famous Spotify music player application made using html,css and javascript. Users can select on the playlists and play/pause the repective songs with ease.',
     video:'https://drive.google.com/file/d/1X9y0k5IynGuDzr3JufZKaeK5BcG-Xfxl/preview',
-    link: 'https://soumyasspotify.freewebhostmost.com/'
+    link: 'https://soumyadeepspotify.freewebhostmost.com/'
   },
   {
     id:9,
