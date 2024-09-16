@@ -85,6 +85,14 @@ const projects = [
     video: "https://drive.google.com/file/d/1shkUR__aG6iAAHH997fZAXzQXm900TXH/preview",
     link: "None",
   },
+  {
+    id:10,
+    image:'/assets/images/rayban.png',
+    title:'Project 10 : Animated Landing Page',
+    fullDescription:'A animated landing page created using html css and js.',
+    video:'https://drive.google.com/file/d/1aoJ6yneRMtNiZgnfqVIIm6QX9LtVwSm-/preview',
+    link: 'https://sinhasoumyadeep1234.github.io/AnimatedWebsite/',
+  },
 ];
 
 const ProjectDetails = () => {
