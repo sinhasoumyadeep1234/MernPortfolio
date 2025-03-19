@@ -54,7 +54,7 @@ const Home = () => {
             this portfolio website" <br></br>~ Soumyadeep.
           </p>
           <a
-            href="/assets/resume/SoumyadeepSinha(updatedResume).pdf"
+            href="/assets/resume/NewResumeSoumyadeep.pdf"
             className="resume-button glow-effect"
             target="_blank"
             rel="noopener noreferrer"
