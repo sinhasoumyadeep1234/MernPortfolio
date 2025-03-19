@@ -429,7 +429,7 @@
 
 .image-container {
   width: 400px;
-  height: 500px;
+  height: 900px;
   background-image: url('/public/assets/images/profilemain.png'); /* Update with your image path */
   background-size: cover;
   background-position: center;
